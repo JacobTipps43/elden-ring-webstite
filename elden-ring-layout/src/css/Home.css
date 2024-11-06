@@ -1,0 +1,28 @@
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#main-welcome{
+    background-color: #DCD2B1;
+}
+
+@media only screen and (min-width:700px){
+    .columns{
+        display: flex;
+    }
+
+    .one{
+        flex: 1;
+    }
+
+    .three{
+        flex: 3;
+    }
+
+    #main-nav li{
+        flex:1;
+    }
+}

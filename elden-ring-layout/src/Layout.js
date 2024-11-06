@@ -1,5 +1,6 @@
 import "./css/Layout.css";
 import Header from "./components/header";
+import Footer from "./components/footer";
 import {Outlet,Link } from "react-router-dom";
 import React from "react";
 
@@ -20,7 +21,7 @@ const Layout = () => {
 
     <Outlet />
 
-    <p>This is my footer</p>
+    <Footer />
     </>
   );
 };

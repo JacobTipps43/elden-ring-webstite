@@ -1,0 +1,70 @@
+table, th, td {
+    border: 1px solid black;
+    font-size: 40px;
+    background-color: #dbd2b0;
+    color: #1a2324;
+}
+#tableNames{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    background-color: #476747;
+    color: #1a2324;
+}
+#tableHeader{
+    color: darkred;
+}
+
+#statsTitle{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    background-color: #476747;
+    color: #1a2324;
+}
+
+/*Tables*/
+#strengthTable{
+    padding-left: 0px;
+}
+#strengthTable h3{
+    padding-left: 0px;
+}
+#dexterityTable{
+    padding-left: 0px;
+}
+#dexterityTable h3{
+    padding-left: 0px;
+}
+
+@media only screen and (min-width:850px){
+    .columns {
+      display: flex;
+    }
+
+  .one{
+      flex:1;
+  }
+  #main-nav{
+    flex:1;
+  }
+
+  #strengthTable{
+    padding-left: 45px;
+}
+    #strengthTable h3{
+    padding-left: 120px;
+}
+    #dexterityTable{
+    padding-left: 45px;
+}
+    #dexterityTable h3{
+    padding-left: 120px;
+}
+#toggle-nav {
+    display:none;
+  }
+  .hidden-small {
+    display:flex;
+  }
+}
