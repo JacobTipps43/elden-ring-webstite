@@ -1,0 +1,56 @@
+#main-header{
+    background-color: #476747;
+    color: #1a2324;
+    padding-bottom: 0.1px;
+}
+#main-header h1{
+    text-align: center;
+    font-size: 40px;
+}
+#main-header a{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-size: 20px;
+}
+
+#tableNames{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    background-color: #476747;
+    color: #1a2324;
+}
+
+#Armor{
+    text-align: center;
+    background-color: #dbd2b0;
+    color: #1a2324;
+}
+#Armor section{
+    border: solid 1px black;
+    padding-bottom: 5px;
+}
+
+#Armor img{
+    width: auto;
+    height: 250px;
+}
+
+#Title{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    background-color: #476747;
+    color: #1a2324;
+}
+
+@media only screen and (min-width:850px){
+    .columns {
+      display: flex;
+    }
+
+  .one{
+      flex:1;
+  }
+}

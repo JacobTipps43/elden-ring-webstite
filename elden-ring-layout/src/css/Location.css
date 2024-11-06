@@ -13,40 +13,28 @@
     background-color: white;
     font-size: 20px;
 }
+
+#Locations{
+    text-align: center;
+    background-color: #dbd2b0;
+    color: #1a2324;
+}
+#Locations section{
+    border: solid 1px black;
+    padding-bottom: 5px;
+}
+
+#Locations img{
+    width: auto;
+    height: 250px;
+}
+
 #tableNames{
     text-align: center;
     font-size: 30px;
     font-weight: 500;
     background-color: #476747;
     color: #1a2324;
-}
-
-#weaponimages{
-    text-align: center;
-}
-
-#weaponimages img{
-    width: 200px;
-    height: 200px;
-}
-
-#Title{
-    text-align: center;
-    font-size: 50px;
-    font-weight: 500;
-    background-color: #476747;
-    color: #1a2324;
-}
-
-
-#Weapons{
-    text-align: center;
-    background-color: #dbd2b0;
-    color: #1a2324;
-}
-#Weapons section{
-    border: solid 1px black;
-    padding-bottom: 5px;
 }
 
 @media only screen and (min-width:850px){
@@ -56,5 +44,8 @@
 
   .one{
       flex:1;
+  }
+  .three{
+    flex: 3;
   }
 }

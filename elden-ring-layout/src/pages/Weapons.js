@@ -4,6 +4,7 @@ import "../css/Weapons.css";
 const Weapons = () => {
     return (
         <div>
+            <h1 id="Title">Weapons for Each Build</h1>
             <p id="tableNames">Strength Build Weapons</p>
             <div class="columns" id="Weapons">
                 <section class="one">
