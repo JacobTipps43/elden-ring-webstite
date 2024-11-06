@@ -1,0 +1,37 @@
+#main-nav{
+    background-color: #f2d16c;
+    font-size: 20px;
+}
+
+#main-nav ul{
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 8px;
+    margin: 0;
+    border: solid 3px black;
+}
+
+#main-nav a{
+    text-decoration: none;
+    color: black;
+}
+
+#main-nav a:hover{
+    background-color: black;
+    color:white;
+    margin: 2px;
+}
+
+@media only screen and (min-width:700px){
+    .columns{
+        display: flex;
+    }
+
+    .one{
+        flex: 1;
+    }
+
+    #main-nav li{
+        flex:1;
+    }
+}
