@@ -4,6 +4,7 @@ import "../css/Location.css";
 const Location = () => {
     return (
         <div>
+            <h1 id="title">Locations for Best Items in the Build</h1>
             <p id="tableNames">Strength Build Items</p>
             <div id="Locations" className="columns">
                 <section className="one">

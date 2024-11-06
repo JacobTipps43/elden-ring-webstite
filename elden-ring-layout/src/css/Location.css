@@ -14,6 +14,14 @@
     font-size: 20px;
 }
 
+#title{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    background-color: #476747;
+    color: #1a2324;
+}
+
 #Locations{
     text-align: center;
     background-color: #dbd2b0;
