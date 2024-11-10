@@ -27,6 +27,20 @@
     text-align: center;
 }
 
+.hide-small {
+    display:none;
+}
+
+button{
+    background-color: #DCD2B1;
+    border: 1px solid black;
+}
+
+button:hover{
+    background-color: #f2d16c;
+    border: 1px solid black;
+}
+
 @media only screen and (min-width:700px){
     .columns{
         display: flex;
@@ -38,5 +52,17 @@
 
     #main-nav li{
         flex:1;
+    }
+
+    .hide-small {
+        display:flex;
+    }
+
+    #main-nav {
+        display: block;
+      }
+
+      button {
+        display: none;
     }
 }

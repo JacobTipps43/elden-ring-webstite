@@ -4,6 +4,12 @@ img{
     object-fit: cover;
 }
 
+iFrame{
+    height:400px; 
+    position: relative; 
+    width: 100%;
+}
+
 #main-welcome{
     background-color: #DCD2B1;
 }

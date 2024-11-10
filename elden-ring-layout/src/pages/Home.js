@@ -1,4 +1,5 @@
 import "../css/Home.css";
+import Contact from "../components/contact";
 import React from 'react';
 
 const Home = () => {
@@ -15,6 +16,9 @@ const Home = () => {
                 <p>My name is Jacob Tippett and I am a sophomore at the University of South Carolina with a major in CIS. I am an avid gamer who has played hundreds of different games, from the most chill farming game, to the most intense Souls-Likes, I love video games. I also love spreading information about games that could help people which is my main inspiration for making this website.</p>
             </section>
         </div>
+
+        <iframe src="https://mapgenie.io/elden-ring/maps/the-lands-between?embed=light"></iframe>
+
         <div className="columns">
             <section className="one"><img src="images/index/ER_Margit_Boss.png" alt="Margit, The Fell Omen"/></section>
             <section className="one"><img src="images/index/ER_Starscourge_Radahn.png" alt="Star Scourage Radahn"/></section>
@@ -22,6 +26,9 @@ const Home = () => {
             <section className="one"><img src="images/index/godfrey-first-elden-lord-hoarah-loux.png" alt="Godfrey, The First Elden Lord"/></section>
             <section className="one"><img src="images/index/Elden-Ring-Maliketh-Roaring.png" alt="Maliketh the Black Blade"/></section>
         </div>
+
+        <Contact />
+        
         </div>
     );
 };
