@@ -28,13 +28,14 @@ function Contact() {
   };
 
   return (
-    <div>
+    <div id="contact">
+        <h2>Have Questions? Contact Us!!</h2>
       <form onSubmit={onSubmit}>
-        <input type="text" name="name" required/>
-        <input type="email" name="email" required/>
-        <textarea name="message" required></textarea>
+        <input type="text" name="name" placeholder="Name" required/><br></br>
+        <input type="email" name="email" placeholder="Email" required/><br></br>
+        <textarea name="message" placeholder="Message" required></textarea>
 
-        <button type="submit">Submit Form</button>
+        <button id="submit"type="submit">Submit Form</button>
 
       </form>
       <span>{result}</span>

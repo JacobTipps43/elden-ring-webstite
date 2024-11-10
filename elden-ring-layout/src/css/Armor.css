@@ -32,9 +32,20 @@
     padding-bottom: 5px;
 }
 
-#Armor img{
+#smallImage{
     width: auto;
     height: 250px;
+}
+
+    
+
+#bigImage{
+    height: 600px; 
+    width: auto;
+}
+
+#sep{
+    border-bottom: solid 1px black;
 }
 
 #Title{
