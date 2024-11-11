@@ -5,8 +5,13 @@ import Weapon from '../components/Weapons/Weapon';
 const Weapons = () => {
     return (
         <>
-        <div>
-            <Weapon />
+        <p id="tableNames">Strength Build Weapons</p>
+        <div className="columns" id='Weapons'>
+        <section class="one">
+                <p>Greatsword</p>
+                <div id="weaponimages"><img src="images/Weapons/Greatsword.png" alt='GreatSword'/></div>
+                <p>The Greatsword in Elden Ring is a massive, heavy weapon, dealing devastating damage with wide swings. When paired with the Lion’s Claw Ash of War, it becomes even more powerful, allowing for a fierce, leaping attack that crushes enemies with overwhelming force.</p>
+            </section>
         </div>
 
             <p id="tableNames">Dexterity Build Weapons</p>
