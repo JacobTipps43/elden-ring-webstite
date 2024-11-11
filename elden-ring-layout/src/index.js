@@ -10,6 +10,7 @@ import Armor from './pages/Armor';
 import Talismans from './pages/Talismans';
 import Location from './pages/Location';
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const App = () => {
