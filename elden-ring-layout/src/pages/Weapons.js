@@ -1,6 +1,6 @@
 import React from 'react';
 import "../css/Weapons.css";
-import StrengthWeapons from '../components/Weapons/Weapons';
+import StrengthWeapons from '../components/Weapons/Weapon';
 
 const Weapons = () => {
     
