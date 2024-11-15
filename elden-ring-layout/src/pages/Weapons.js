@@ -1,12 +1,13 @@
 import React from 'react';
 import "../css/Weapons.css";
-import Weapon from '../components/Weapons/Weapon';
+import StrengthWeapons from '../components/Weapons/Weapons';
 
 const Weapons = () => {
-    console.log(Weapon);
+    
     return (
         <>
         <p id="tableNames">Strength Build Weapons</p>
+        <StrengthWeapons />
         <div className="columns" id='Weapons'>
         <section class="one">
                 <p>Greatsword</p>
