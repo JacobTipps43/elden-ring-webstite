@@ -3,6 +3,7 @@ import "../css/Weapons.css";
 import Weapon from '../components/Weapons/Weapon';
 
 const Weapons = () => {
+    console.log(Weapon);
     return (
         <>
         <p id="tableNames">Strength Build Weapons</p>

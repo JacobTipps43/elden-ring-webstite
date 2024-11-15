@@ -8,7 +8,7 @@ const Weapons = () => {
     useEffect(() => {
         const fetchWeapons = async () => {
             try {
-                const response = await axios.get("https://elden-ring-backend-07b0.onrender.com/");
+                const response = await axios.get("https://elden-ring-backend-07b0.onrender.com/api/Weps");
                 setWeapons(response.data);
             } catch (error) {
                 console.error("Error fetching weapons:", error);
