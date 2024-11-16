@@ -57,4 +57,12 @@
   .one{
       flex:1;
   }
+
+  #Weapons {
+    flex-wrap: wrap;
+    }
+    
+  #Weapons section {
+    flex:30%;
+}
 }

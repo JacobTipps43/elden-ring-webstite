@@ -2,13 +2,13 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import Weapon from "./Weapon";
 
-const StrengthWeapons = () => {
+const FaithWeapons = () => {
     const [weapons, setWeapons] = useState([]);
 
     useEffect(() => {
         const fetchWeapons = async () => {
             try {
-                const response = await axios.get("https://elden-ring-backend-07b0.onrender.com/api/Wepons/strengthWeapons");
+                const response = await axios.get("https://elden-ring-backend-07b0.onrender.com/api/Wepons/faithWeapons");
                 setWeapons(response.data);
             } catch (error) {
                 console.error("Error fetching weapons:", error);
@@ -19,11 +19,11 @@ const StrengthWeapons = () => {
     }, []);
 
     return (
-        <div className="weapons">
+        <div className="weapons columns" id="Weapons">
             {weapons.map((weapon) => (
                 <Weapon
                     name={weapon.name}
-                    img={weapon.image}
+                    img={weapon.img}
                     description={weapon.description}
                 />
             ))}
@@ -31,4 +31,4 @@ const StrengthWeapons = () => {
     );
 };
 
-export default StrengthWeapons;
+export default FaithWeapons;

@@ -2,9 +2,9 @@ import "../css/Weapon.css";
 
 const Weapon = (weapon) => {
     return(
-    <section className="weapon">
-        <h3>{weapon.name}</h3>
-        <img src={weapon.image} alt={weapon.name} />
+    <section className="weapon one">
+        <p>{weapon.name}</p>
+        <div id="weaponimages"><img src={weapon.img} alt={weapon.name}/></div>
         <p>{weapon.description}</p>
     </section>
     );
