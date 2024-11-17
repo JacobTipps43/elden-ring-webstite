@@ -19,6 +19,7 @@ const StrengthWeapons = () => {
     }, []);
 
     return (
+        <>
         <div className="weapons columns" id="Weapons">
             {weapons.map((weapon) => (
                 <Weapon
@@ -28,6 +29,7 @@ const StrengthWeapons = () => {
                 />
             ))}
         </div>
+        </>
     );
 };
 
