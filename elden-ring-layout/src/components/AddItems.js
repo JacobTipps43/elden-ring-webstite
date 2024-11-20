@@ -2,7 +2,44 @@ import "./css/Dialog.css";
 import React, { useState } from "react";
 //inputs.img != null ? URL.createObjectURL(inputs.img) : ""
 const AddItem = (props) => {
-  const response = await fetch(`https://elden-ring-backend-07b0.onrender.com/api/${props.category}/${props.type}`)
+  const [inputs, setInputs] = useState({});
+  const [results, setResults] = useState("");
+
+  const handleChange = (e) => {
+    const name = e.target.name;
+    const value = e.target.value;
+    setInputs((values)=> ({...values, [name]: value}));
+  }
+
+  const handleImageChange = (e) => {
+    const name = e.target.name;
+    const value = e.target.value[0];
+    setInputs((values)=> ({...values, [name]: value}));
+  }
+
+  const addToServer = async (e) => {
+    e.preventDefault();
+    setResults("Adding Item...");
+
+    const formData = new FormData(e.target);
+    console.log(formData);
+
+    const response = await fetch(`https://elden-ring-backend-07b0.onrender.com/api/${props.category}/${props.type}`, {
+      method: "POST",
+      body: formData
+    });
+
+    if(response.status === 200){
+      setResults("Item Added!");
+      props.showNewItems(await response.json());
+      e.target.reset();
+      props.closeDialog();
+    }else{
+      setResults("Error Adding Item");
+    }
+
+  }
+
 
   return (
     <div id="add-dialog" className="w3-modal">
