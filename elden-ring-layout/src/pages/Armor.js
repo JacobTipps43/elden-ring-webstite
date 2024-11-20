@@ -9,7 +9,7 @@ const Armor = () => {
             <section class="one">
                 <div id="sep">
                     <p>Bull Goat set</p>
-                    <div><img id="smallImage" src="images/Armor/bullgate-set.png"/></div>
+                    <div><img id="smallImage" src="images/Armor/bullgoat-set.png"/></div>
                     <p>The Bull-Goat Set in Elden Ring is a massive, heavy armor known for its exceptional poise and defense. While it slows movement, it allows the wearer to endure even the heaviest attacks. This set is linked to Great Horned Tragoth, a legendary warrior famed for his resilience in battle.</p>
                     </div>
                 <div>

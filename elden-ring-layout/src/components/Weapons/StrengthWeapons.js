@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Weapon from "./Weapon";
+import AddItems from "../AddItems";
 
 const StrengthWeapons = () => {
     const [weapons, setWeapons] = useState([]);
+    const [showAddDialog, setShowAddDialog] = useState(false);
 
     useEffect(() => {
         const fetchWeapons = async () => {
@@ -18,14 +20,37 @@ const StrengthWeapons = () => {
         fetchWeapons();
     }, []);
 
+    const openAddDialog = () => {
+        setShowAddDialog(true);
+      };
+    
+      const closeAddDialog = () => {
+        setShowAddDialog(false);
+      };
+
     return (
         <>
+
+    <button id="add-strength-weapons" onClick={openAddDialog}>
+        +
+      </button>
+
+      {showAddDialog ? (
+        <AddItems
+          closeDialog={closeAddDialog}
+        />
+      ) : (
+        ""
+      )}
+        
         <div className="weapons columns" id="Weapons">
             {weapons.map((weapon) => (
                 <Weapon
                     name={weapon.name}
                     img={weapon.img}
                     description={weapon.description}
+                    category="Wepons"
+                    type="strengthWeapons"
                 />
             ))}
         </div>

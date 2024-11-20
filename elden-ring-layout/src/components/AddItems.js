@@ -2,11 +2,13 @@ import "./css/Dialog.css";
 import React, { useState } from "react";
 //inputs.img != null ? URL.createObjectURL(inputs.img) : ""
 const AddItem = (props) => {
+  const response = await fetch(`https://elden-ring-backend-07b0.onrender.com/api/${props.category}/${props.type}`)
+
   return (
     <div id="add-dialog" className="w3-modal">
       <div className="w3-modal-content">
         <div className="w3-container">
-          <span id="dialog-close" className="w3-button w3-display-topright">
+          <span id="dialog-close" className="w3-button w3-display-topright" onClick={props.closeDialog}>
             &times;
           </span>
           <form id="add-property-form">
