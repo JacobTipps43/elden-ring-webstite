@@ -13,8 +13,9 @@ const AddItem = (props) => {
 
   const handleImageChange = (e) => {
     const name = e.target.name;
-    const value = e.target.value[0];
+    const value = e.target.files[0];
     setInputs((values)=> ({...values, [name]: value}));
+    console.log(`My Image is ${inputs.img}`);
   }
 
   const addToServer = async (e) => {
@@ -48,28 +49,28 @@ const AddItem = (props) => {
           <span id="dialog-close" className="w3-button w3-display-topright" onClick={props.closeDialog}>
             &times;
           </span>
-          <form id="add-property-form">
+          <form id="add-property-form" onSubmit={addToServer}>
             <p>
               <label htmlFor="name ">Item Name:</label>
-              <input type="text" id="name" name="name" required />
+              <input type="text" id="name" name="name" required onChange={handleChange}/>
             </p>
-
             <section className="columns">
               <p id="img-prev-section">
-                <img id="img-prev" alt="" />
+                <img id="img-prev" alt="" src={inputs.img != null ? URL.createObjectURL(inputs.img) : ""}/>
               </p>
               <p id="img-upload">
                 <label htmlFor="img">Upload Image:</label>
-                <input type="file" id="img" name="img" accept="image/*" />
+                <input type="file" id="img" name="img" accept="image/*" onChange={handleImageChange}/>
               </p>
             </section>
             <p>
               <label htmlFor="Description">Description:</label>
-              <input type="text" id="Description" name="Description" required />
+              <input type="text" id="Description" name="Description" required onChange={handleChange}/>
             </p>
             <p>
               <button type="submit" id="Submit">Submit</button>
             </p>
+            <p>{results}</p>
           </form>
         </div>
       </div>

@@ -38,6 +38,8 @@ const StrengthWeapons = () => {
       {showAddDialog ? (
         <AddItems
           closeDialog={closeAddDialog}
+          category="Wepons"
+          type="strengthWeapons"
         />
       ) : (
         ""
@@ -49,8 +51,6 @@ const StrengthWeapons = () => {
                     name={weapon.name}
                     img={weapon.img}
                     description={weapon.description}
-                    category="Wepons"
-                    type="strengthWeapons"
                 />
             ))}
         </div>
