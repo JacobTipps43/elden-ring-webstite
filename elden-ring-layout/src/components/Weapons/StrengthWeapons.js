@@ -28,6 +28,10 @@ const StrengthWeapons = () => {
         setShowAddDialog(false);
       };
 
+      const updateWeapon = (newWeapons) => {
+        setWeapons((oldWeapons) => [...oldWeapons, newWeapons]);
+      };
+
     return (
         <>
 
@@ -40,6 +44,7 @@ const StrengthWeapons = () => {
           closeDialog={closeAddDialog}
           category="Wepons"
           type="strengthWeapons"
+          showNewItems={updateWeapon}
         />
       ) : (
         ""

@@ -1,9 +1,17 @@
 import "./css/Dialog.css";
 import React, { useState } from "react";
+import { useEffect } from "react";
 //inputs.img != null ? URL.createObjectURL(inputs.img) : ""
 const AddItem = (props) => {
   const [inputs, setInputs] = useState({});
   const [results, setResults] = useState("");
+
+  useEffect(() => {
+    if(inputs.img){
+      console.log(`My Image is ${inputs.img}`);
+    }
+  }, [inputs.img]);
+
 
   const handleChange = (e) => {
     const name = e.target.name;
@@ -65,7 +73,7 @@ const AddItem = (props) => {
             </section>
             <p>
               <label htmlFor="Description">Description:</label>
-              <input type="text" id="Description" name="Description" required onChange={handleChange}/>
+              <input type="text" id="Description" name="description" required onChange={handleChange}/>
             </p>
             <p>
               <button type="submit" id="Submit">Submit</button>
