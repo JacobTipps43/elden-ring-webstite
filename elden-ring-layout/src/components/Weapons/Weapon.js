@@ -5,9 +5,9 @@ const Weapon = (weapon) => {
     <section className="weapon one">
         <p>{weapon.name}</p>
         {
-            console.log(`localhost:3001/${weapon.img}`)
+            console.log(`https://elden-ring-backend-07b0.onrender.com/${weapon.img}`)
         }
-        <div id="weaponimages"><img src={`https://elden-ring-backend-07b0.onrender.com/${weapon.img}`} alt={weapon.name}/></div>
+        <div id="weaponimages"><img src={`https://elden-ring-backend-07b0.onrender.com/images/Weapons/${weapon.img}`} alt={weapon.name}/></div>
         <p>{weapon.description}</p>
     </section>
     );
