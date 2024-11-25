@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Talisman from "./Talisman";
+import AddItems from "../AddItems";
 
 const ArcaneTalismans = () => {
     const [talismans, setTalismans] = useState([]);
+    const [showAddDialog, setShowAddDialog] = useState(false);
 
     useEffect(() => {
         const fetchTalismans = async () => {
@@ -18,7 +20,36 @@ const ArcaneTalismans = () => {
         fetchTalismans();
     }, []);
 
+    const openAddDialog = () => {
+        setShowAddDialog(true);
+      };
+
+    const closeAddDialog = () => {
+        setShowAddDialog(false);
+        };
+
+    const updateTalisman = (newTalismans) => {
+        setTalismans((oldTalismans) => [...oldTalismans, newTalismans]);
+        };
+
     return (
+        <>
+
+        <button id="add-arcane-talismans" onClick={openAddDialog}>
+            +
+            </button>
+
+            {showAddDialog ? (
+            <AddItems
+            closeDialog={closeAddDialog}
+            category="talismans"
+            type="arcaneTalismans"
+            showNewItems={updateTalisman}
+            />
+        ) : (
+            ""
+        )}
+
         <div className="talismans columns" id="Talismans">
             {talismans.map((talisman) => (
                 <Talisman
@@ -28,6 +59,7 @@ const ArcaneTalismans = () => {
                 />
             ))}
         </div>
+        </>
     );
 };
 

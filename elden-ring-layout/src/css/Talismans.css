@@ -53,4 +53,12 @@
   .one{
       flex:1;
   }
+
+  #talismans{
+    flex-wrap: wrap;
+  }
+
+    #talismans section{
+        flex:30%;
+    }
 }
