@@ -56,4 +56,12 @@
   .three{
     flex: 3;
   }
+
+    #Locations{
+        flex-wrap: wrap;
+    }
+
+    #Locations section{
+        flex:30%;
+    }
 }

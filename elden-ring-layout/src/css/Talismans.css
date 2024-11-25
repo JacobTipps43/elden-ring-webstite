@@ -54,11 +54,11 @@
       flex:1;
   }
 
-  #talismans{
+  #Talismans{
     flex-wrap: wrap;
   }
 
-    #talismans section{
+    #Talismans section{
         flex:30%;
     }
 }

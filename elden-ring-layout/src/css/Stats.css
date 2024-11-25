@@ -15,6 +15,13 @@ table, th, td {
     color: darkred;
 }
 
+.columns{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 #statsTitle{
     text-align: center;
     font-size: 50px;
@@ -23,23 +30,22 @@ table, th, td {
     color: #1a2324;
 }
 
-/*Tables*/
-#strengthTable{
-    padding-left: 0px;
+#strengthTable, #dexterityTable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
-#strengthTable h3{
-    padding-left: 0px;
-}
-#dexterityTable{
-    padding-left: 0px;
-}
-#dexterityTable h3{
-    padding-left: 0px;
+
+
+#strengthTable h3, #dexterityTable h3 {
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 @media only screen and (min-width:850px){
     .columns {
-      display: flex;
+        display: flex;
     }
 
   .one{
@@ -49,17 +55,13 @@ table, th, td {
     flex:1;
   }
 
-  #strengthTable{
-    padding-left: 45px;
+  #strengthTable, #dexterityTable {
+    width: 90%;
+    margin: 20px auto;
 }
-    #strengthTable h3{
-    padding-left: 120px;
-}
-    #dexterityTable{
-    padding-left: 45px;
-}
-    #dexterityTable h3{
-    padding-left: 120px;
+
+h3 {
+    text-align: center;
 }
 #toggle-nav {
     display:none;
