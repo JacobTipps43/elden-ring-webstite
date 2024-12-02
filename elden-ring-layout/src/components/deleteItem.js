@@ -9,9 +9,11 @@ const DeleteItem = (props) => {
             method: "DELETE",
         });
 
+        console.log(response);
+
         if(response.status === 200){
             setResult("Item Deleted!");
-            props.showNewItems(await response.json());
+            props.hideItem();
             props.closeDialog();
         }else{
             setResult("Error Deleting Item");
