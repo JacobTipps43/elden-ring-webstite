@@ -2,6 +2,10 @@
     display: block;
 }
 
+#answer{
+  display: block;
+}
+
 @import url("https://www.w3schools.com/w3css/4/w3.css");
 #dialog-section {
   position: relative;

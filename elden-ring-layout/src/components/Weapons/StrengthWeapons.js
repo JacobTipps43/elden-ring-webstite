@@ -53,9 +53,12 @@ const StrengthWeapons = () => {
         <div className="weapons columns" id="Weapons">
             {weapons.map((weapon) => (
                 <Weapon
+                    _id={weapon._id}
                     name={weapon.name}
                     img={weapon.img}
                     description={weapon.description}
+                    category="Wepons"
+                    type="strengthWeapons"
                 />
             ))}
         </div>
