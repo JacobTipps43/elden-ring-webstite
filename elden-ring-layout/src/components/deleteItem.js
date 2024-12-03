@@ -5,9 +5,10 @@ const DeleteItem = (props) => {
     const [result, setResult] = useState("");
 
     const deleteItem = async () => {
-        const response = await fetch(`http://localhost:3001/api/${props.category}/${props.type}/${props._id}`, {
+        const response = await fetch(`https://elden-ring-backend-07b0.onrender.com/api/${props.category}/${props.type}/${props._id}`, {
             method: "DELETE",
         });
+
 
         console.log(response);
 

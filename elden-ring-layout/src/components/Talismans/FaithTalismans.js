@@ -53,9 +53,12 @@ const FaithTalismans = () => {
         <div className="talismans columns" id="Talismans">
             {talismans.map((talisman) => (
                 <Talisman
+                    _id={talisman._id}
                     name={talisman.name}
                     img={talisman.img}
                     description={talisman.description}
+                    category="Talismans"
+                    type="faithTalismans"
                 />
             ))}
         </div>

@@ -6,6 +6,14 @@
   display: block;
 }
 
+#edit{
+  list-style-type: none;
+  align-items: center;
+}
+#edit li{
+  margin-top: 10px;
+}
+
 @import url("https://www.w3schools.com/w3css/4/w3.css");
 #dialog-section {
   position: relative;

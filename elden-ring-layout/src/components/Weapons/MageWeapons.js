@@ -57,6 +57,8 @@ const MageWeapons = () => {
                     name={weapon.name}
                     img={weapon.img}
                     description={weapon.description}
+                    category="Wepons"
+                    type="mageWeapons"
                 />
             ))}
         </div>

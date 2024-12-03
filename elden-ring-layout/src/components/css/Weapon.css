@@ -26,3 +26,32 @@
 #add-arcane-weapons{
     display: block;
 }
+
+#Weapons{
+    text-align: center;
+    background-color: #dbd2b0;
+    color: #1a2324;
+    
+}
+#Weapons section{
+    border: solid 1px black;
+    padding-bottom: 5px;
+}
+
+@media only screen and (min-width:850px){
+    .columns {
+      display: flex;
+    }
+
+  .one{
+      flex:1;
+  }
+
+  #Weapons {
+    flex-wrap: wrap;
+    }
+    
+  #Weapons section {
+    flex:30%;
+}
+}

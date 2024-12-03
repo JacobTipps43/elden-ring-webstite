@@ -2,6 +2,7 @@ import "../css/Weapon.css";
 import React from "react";
 import { useEffect, useState } from "react";
 import DeleteItem from "../deleteItem";
+import EditItem from "../editItem";
 
 const Weapon = (weapon) => {
 
@@ -49,7 +50,26 @@ const Weapon = (weapon) => {
           ) : (
             ""
           )}
-          <section className="weapon one">
+
+          {showEditDialog ? (
+            <EditItem
+              category={weapon.category}
+              type={weapon.type}
+              _id={weapon._id}
+              name={weapon.name}
+              img={weapon.img}
+              description={weapon.description}
+              closeDialog={closeEditDialog}
+              updateItem={editItem}
+            />
+          ) : (
+            ""
+          )}
+
+          <section id="Weapons"className="one">
+          <a href="#" onClick={openEditDialog}>
+                    &#9998;
+                  </a>
             <a href="#" onClick={openDeleteDialog}>
               &#x2715;
             </a>

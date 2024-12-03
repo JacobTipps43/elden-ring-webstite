@@ -57,6 +57,8 @@ const FaithWeapons = () => {
                     name={weapon.name}
                     img={weapon.img}
                     description={weapon.description}
+                    category="Wepons"
+                    type="faithWeapons"
                 />
             ))}
         </div>

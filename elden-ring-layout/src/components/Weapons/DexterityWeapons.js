@@ -57,6 +57,8 @@ const DexterityWeapons = () => {
                     name={weapon.name}
                     img={weapon.img}
                     description={weapon.description}
+                    category="Wepons"
+                    type="dexterityWeapons"
                 />
             ))}
         </div>

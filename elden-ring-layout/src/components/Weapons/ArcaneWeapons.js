@@ -57,6 +57,8 @@ const ArcaneWeapons = () => {
                     name={weapon.name}
                     img={weapon.img}
                     description={weapon.description}
+                    category="Wepons"
+                    type="arcaneWeapons"
                 />
             ))}
         </div>
