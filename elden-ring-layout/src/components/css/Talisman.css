@@ -17,3 +17,53 @@
 #add-arcane-talismans{
     display:block;
 }
+
+#Talismans img{
+    width: 250px;
+    height: auto;
+}
+
+#Talismans{
+    text-align: center;
+    background-color: #dbd2b0;
+    color: #1a2324;
+}
+#Talismans section{
+    height: 100%;
+    border: solid 1px black;
+    padding-bottom: 5px;
+}
+
+#Title{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    background-color: #476747;
+    color: #1a2324;
+}
+
+#tableNames{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    background-color: #476747;
+    color: #1a2324;
+}
+
+@media only screen and (min-width:850px){
+    .columns {
+      display: flex;
+    }
+
+  .one{
+      flex:1;
+  }
+
+  #Talismans{
+    flex-wrap: wrap;
+  }
+
+    #Talismans section{
+        flex:30%;
+    }
+}

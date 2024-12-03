@@ -36,7 +36,7 @@ const Talisman = (talisman) => {
   return (
     <>
       {showItem ? (
-        <div>
+        <div className="Talismans one">
           {showDeleteDialog ? (
             <DeleteItem
               category={talisman.category}
@@ -61,7 +61,7 @@ const Talisman = (talisman) => {
             />
           ) : null}
 
-          <section className="talisman one">
+          <section>
             <a href="#" onClick={openEditDialog}>
               &#9998;
             </a>

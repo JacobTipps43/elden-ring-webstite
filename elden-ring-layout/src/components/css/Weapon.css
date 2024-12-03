@@ -34,9 +34,23 @@
     
 }
 #Weapons section{
+    height: 100%;
     border: solid 1px black;
     padding-bottom: 5px;
 }
+
+#Weapons section a{
+    font-size: 20px;
+    color: #1A2324;
+    text-decoration: none;
+}
+
+#Weapons section a:hover{
+    color: #3A4B4C;
+    text-decoration: underline;
+}
+
+
 
 @media only screen and (min-width:850px){
     .columns {
@@ -47,7 +61,7 @@
       flex:1;
   }
 
-  #Weapons {
+  .columns {
     flex-wrap: wrap;
     }
     

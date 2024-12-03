@@ -37,7 +37,7 @@ const Weapon = (weapon) => {
    return (
     <>
       {showItem ? (
-        <div>
+        <div className="Weapons one">
           {showDeleteDialog ? (
             <DeleteItem
               category={weapon.category}
@@ -66,7 +66,7 @@ const Weapon = (weapon) => {
             ""
           )}
 
-          <section id="Weapons"className="one">
+          <section>
           <a href="#" onClick={openEditDialog}>
                     &#9998;
                   </a>
