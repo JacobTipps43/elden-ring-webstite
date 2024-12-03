@@ -33,36 +33,39 @@ const Weapon = (weapon) => {
         setItem(newItem);
       }
 
-    return(
-            <>
-
-            {showDeleteDialog ?(
-
-                <DeleteItem
-                category= {weapon.category}
-                type={weapon.type}
-                _id={weapon._id}
-                name={weapon.name}
-                closeDialog={closeDeleteDialog}
-                showNewItems={hideItem}
-                />
-            ) :("")}
-
-                  <section className="weapon one">
-                  <a href="#" onClick={openDeleteDialog}>
-                    &#x2715;
-                  </a>
-                    <p>{weapon.name}</p>
-                    <div id="weaponimages">
-                      <img
-                        src={`https://elden-ring-backend-07b0.onrender.com/${weapon.img}`}
-                        alt={weapon.name}
-                      />
-                    </div>
-                    <p>{weapon.description}</p>
-                  </section>
-            </>
-          );          
+   return (
+    <>
+      {showItem ? (
+        <div>
+          {showDeleteDialog ? (
+            <DeleteItem
+              category={weapon.category}
+              type={weapon.type}
+              _id={weapon._id}
+              name={weapon.name}
+              closeDialog={closeDeleteDialog}
+              hideItem={hideItem}
+            />
+          ) : (
+            ""
+          )}
+          <section className="weapon one">
+            <a href="#" onClick={openDeleteDialog}>
+              &#x2715;
+            </a>
+            <p>{weapon.name}</p>
+            <div id="weaponimages">
+              <img
+                src={`https://elden-ring-backend-07b0.onrender.com/${weapon.img}`}
+                alt={weapon.name}
+              />
+            </div>
+            <p>{weapon.description}</p>
+          </section>
+        </div>
+      ) : null}
+    </>
+  );
 };
 
 export default Weapon;
