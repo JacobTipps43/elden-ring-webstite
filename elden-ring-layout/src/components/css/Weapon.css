@@ -27,6 +27,10 @@
     display: block;
 }
 
+#buttons{
+    display: block;
+}
+
 #Weapons{
     text-align: center;
     background-color: #dbd2b0;

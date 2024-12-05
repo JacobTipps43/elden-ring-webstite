@@ -17,6 +17,9 @@
 #add-arcane-talismans{
     display:block;
 }
+#buttons{
+    display:block;
+}
 
 #Talismans img{
     width: 250px;

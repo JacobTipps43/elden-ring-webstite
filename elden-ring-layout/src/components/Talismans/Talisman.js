@@ -62,12 +62,12 @@ const Talisman = (talisman) => {
           ) : null}
 
           <section>
-            <a href="#" onClick={openEditDialog}>
+            <button id="buttons" onClick={openEditDialog}>
               &#9998;
-            </a>
-            <a href="#" onClick={openDeleteDialog}>
+            </button>
+            <button id="buttons"onClick={openDeleteDialog}>
               &#x2715;
-            </a>
+            </button>
             <p>{item.name}</p>
             <div id="weaponimages">
               <img

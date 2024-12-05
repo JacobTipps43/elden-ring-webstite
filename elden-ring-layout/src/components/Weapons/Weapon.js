@@ -67,20 +67,20 @@ const Weapon = (weapon) => {
           )}
 
           <section>
-          <a href="#" onClick={openEditDialog}>
+          <button id="buttons" onClick={openEditDialog}>
                     &#9998;
-                  </a>
-            <a href="#" onClick={openDeleteDialog}>
+                  </button>
+            <button id="buttons" onClick={openDeleteDialog}>
               &#x2715;
-            </a>
-            <p>{weapon.name}</p>
+            </button>
+            <p>{item.name}</p>
             <div id="weaponimages">
               <img
-                src={`https://elden-ring-backend-07b0.onrender.com/${weapon.img}`}
-                alt={weapon.name}
+                src={`https://elden-ring-backend-07b0.onrender.com/${item.img}`}
+                alt={item.name}
               />
             </div>
-            <p>{weapon.description}</p>
+            <p>{item.description}</p>
           </section>
         </div>
       ) : null}

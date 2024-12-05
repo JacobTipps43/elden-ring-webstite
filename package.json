@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/JacobTipps43/elden-ring-webstite/issues"
   },
-  "homepage": "https://github.com/JacobTipps43/elden-ring-webstite#readme"
+  "homepage": "https://github.com/JacobTipps43/elden-ring-webstite#readme",
+  "dependencies": {
+    "mongodb": "^6.11.0"
+  }
 }
