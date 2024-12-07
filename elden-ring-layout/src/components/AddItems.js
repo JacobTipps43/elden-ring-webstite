@@ -73,7 +73,7 @@ const AddItem = (props) => {
             </section>
             <p>
               <label htmlFor="Description">Description:</label>
-              <input type="text" id="Description" name="description" required onChange={handleChange}/>
+              <textarea id="Description" name="description" required onChange={handleChange}/>
             </p>
             <p>
               <button type="submit" id="Submit">Submit</button>
